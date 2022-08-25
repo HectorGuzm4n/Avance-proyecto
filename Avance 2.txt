@@ -1,0 +1,28 @@
+"""
+Posicionamiento de jugadores competitivos
+
+Inicio
+
+definir "score" como entero
+
+Leer kills
+
+leer wins
+
+score= kills+wins
+
+Imprimir score
+
+ordenar de > a <
+fin
+"""
+
+
+
+kills= 3
+wins=4
+score= (kills +wins)
+print (score)
+
+
+
