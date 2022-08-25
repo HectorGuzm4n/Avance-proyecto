@@ -21,3 +21,7 @@ score= kills+wins
 Imprimir score
 
 ordenar de > a <
+
+Avance 2 (el codigo esta en la carpeta de arriba "avance 2"
+
+En este avance incorporé operaciones de suma ingresando valores para poder hacer el ejemplo
