@@ -1,4 +1,6 @@
 """
+Ejemplo del uso de los operadores de suma 
+
 Posicionamiento de jugadores competitivos
 
 Inicio
