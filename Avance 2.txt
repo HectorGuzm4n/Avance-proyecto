@@ -21,8 +21,8 @@ fin
 
 
 
-kills= 3
-wins=4
+kills= input ("numero de eliminaciones")
+wins= input ("numero de victorias")
 score= (kills +wins)
 print (score)
 
