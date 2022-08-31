@@ -26,5 +26,5 @@ kills= K
 wins= W
 score= (K + W)
 print (score)
-lista= sum a,b,c,d,e,f,g,h
+lista= sum (a,b,c,d,e,f,g,h)
 print sorted(score)
