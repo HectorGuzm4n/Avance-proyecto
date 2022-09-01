@@ -25,3 +25,7 @@ ordenar de > a <
 Avance 2 (el codigo esta en la carpeta de arriba "avance 2"
 
 En este avance incorporé operaciones de suma ingresando valores para poder hacer el ejemplo
+
+Avance 3 (el avance esta en la carpeta avance 3.py)
+
+EN este avance se incorporaron funciones de sumas y para ordenar un grupo de valores en orden decresciente
