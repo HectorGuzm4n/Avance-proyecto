@@ -28,7 +28,7 @@ if score < 8000
 print ("lo sentimos ", jugador , " no cuentas con los puntos suficientes para rankearte")
 print ("tus puntos: ", score , " puntos para rankerate: 8000")
 
-elif 
+else 
 print (lista_jugadores)
 print ("felicidades has logrado clasificarte en el ranking con ", score , "puntos")
 
