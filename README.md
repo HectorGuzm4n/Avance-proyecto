@@ -28,4 +28,7 @@ En este avance incorporé operaciones de suma ingresando valores para poder hace
 
 Avance 3 (el avance esta en la carpeta avance 3.py)
 
-EN este avance se incorporaron funciones de sumas y para ordenar un grupo de valores en orden decresciente
+En este avance se incorporaron funciones de sumas y para ordenar un grupo de valores en orden decresciente
+
+Avance 4
+Se añadió una condicional en la que se tiene que cumplir con sierto numero de puntos para poder aparecer en el ranking, si este numero no es alcanzado entonces el programa mandar un mensaje de que los puntos son insuficientes.
