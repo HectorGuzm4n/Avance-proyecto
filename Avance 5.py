@@ -33,12 +33,14 @@ jugador= input ("ingrese nombre de jugador")
   while
   jugador!= jugador
   print ("jugador no encontrado")
+  jugador= input ("ingrese nombre de jugador")
 
 contraseña= input ("ingrese la contraseña")
 
   while
   contraseña!= contraseña
   print ("contraseña incorrecta")
+  contraseña= input ("ingrese la contraseña")
 
 kills= float(input("ingresa numero de eliminaciones"))
 wins= float(input ("Ingresa numero de victorias"))
