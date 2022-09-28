@@ -33,3 +33,7 @@ En este avance se incorporaron funciones de sumas y para ordenar un grupo de val
 Avance 4
 
 Se añadió una condicional en la que se tiene que cumplir con sierto numero de puntos para poder aparecer en el ranking, si este numero no es alcanzado entonces el programa mandar un mensaje de que los puntos son insuficientes.
+
+Avance 5
+
+Se añadieron ciclos while para que el usuario ingrese una cuenta y contraseña y en caso de que estos sean incorrectos se correra el ciclo haste que la condición sea correcta.
