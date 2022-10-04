@@ -27,8 +27,6 @@ print (puntaje [5])
 fin
 """
 
-ranking= []              //los valores de la lista variaran dependiendo del juego y los puntos de cada jugador con una cuenta vinculada
-ranking.sort ()
 
 print ("¿Ya tiene una cuenta?")
 respuesta= input ("si")
@@ -65,8 +63,10 @@ score= score
     else 
    print ("felicidades has logrado clasificarte en el ranking con ", score , "puntos")
   
-  ranking.insert (5,score)
-  ranking.sort ()
+  ranking= [[nombre ":", score] ["wins: " , wins, "kills: ", kills]]           //los valores de la lista variaran dependiendo del juego y los puntos de cada jugador con una cuenta vinculada
+ranking.sort ()
+ranking.insert (5,score)
+ranking.sort ()
   
   print (ranking [1])
   print (ranking [2])
