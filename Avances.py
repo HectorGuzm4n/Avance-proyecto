@@ -34,7 +34,7 @@ print ("¿Ya tiene una cuenta?")
 respuesta= input ("si")
 respuesta= input ("No")
 
-if respuesta= ("No")
+if respuesta= ("No") :
 jugador= ("ingrese su nombrte de jugador")
 contraseña= ("escriba una contraseña")
 
@@ -42,15 +42,13 @@ else
 respuesta= ("Si")
 jugador= input ("ingrese nombre de jugador")
 
-  while
-  jugador!= jugador
+  while  jugador!= jugador :
   print ("jugador no encontrado")
   jugador= input ("ingrese nombre de jugador")
 
 contraseña= input ("ingrese la contraseña")
 
-  while
-  contraseña!= contraseña
+  while  contraseña!= contraseña :
   print ("contraseña incorrecta")
   contraseña= input ("ingrese la contraseña")
 
@@ -60,7 +58,7 @@ wins= float(input ("Ingresa numero de victorias"))
 score= kills + wins
 score= score
 
-   if  score < 8000
+   if  score < 8000 :
    print ("lo sentimos ", jugador , " no cuentas con los puntos suficientes para rankearte")
     print ("tus puntos: ", score , " puntos para rankerate: 8000")
 
