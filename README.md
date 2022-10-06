@@ -37,3 +37,11 @@ Se añadió una condicional en la que se tiene que cumplir con sierto numero de 
 Avance 5 (el avance esta en la carpeta de avances, ahi se pondran todos los avances)
 
 Se añadieron ciclos while para que el usuario ingrese una cuenta y contraseña y en caso de que estos sean incorrectos se correra el ciclo haste que la condición sea correcta.
+
+Avance 6
+
+Se añadieron listas para que guarden los puntos de los jugadores
+
+Avance 7 (avances en loa carpeta de avances)
+
+Se añadieron listas anidadas para que guarden el nombre, puntaje, y el desglose de victorias y eliminaciones
