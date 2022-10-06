@@ -32,9 +32,9 @@ print ("¿Ya tiene una cuenta?")
 respuesta= input ("si")
 respuesta= input ("No")
 
-if respuesta= ("No") :
-jugador= ("ingrese su nombrte de jugador")
-contraseña= ("escriba una contraseña")
+    if respuesta= ("No") :
+  jugador= ("ingrese su nombrte de jugador")
+  contraseña= ("escriba una contraseña")
 
 else
 respuesta= ("Si")
@@ -63,11 +63,14 @@ score= score
     else 
    print ("felicidades has logrado clasificarte en el ranking con ", score , "puntos")
   
-  ranking= [[nombre ":", score] ["wins: " , wins, "kills: ", kills]]           //los valores de la lista variaran dependiendo del juego y los puntos de cada jugador con una cuenta vinculada
+  stats= {wins, kills}
+  
+ranking= [[nombre , score], [stats] ]          //los valores de la lista variaran dependiendo del juego y los puntos de cada jugador con una cuenta vinculada//
 ranking.sort ()
 ranking.insert (5,score)
 ranking.sort ()
   
+  print ("nombre   puntuación   Victorias   Eliminaciones")
   print (ranking [1])
   print (ranking [2])
   print (ranking [3])
