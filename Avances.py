@@ -28,40 +28,37 @@ fin
 """
 
 
-print ("¿Ya tiene una cuenta?")
-respuesta= input ("si")
-respuesta= input ("No")
+print ("cree una cuenta")
+jugador= input ("ingrese su nombre de jugador")
+contrasena= input ("ingrese una contraseña")
 
-    if respuesta= ("No") :
-  jugador= ("ingrese su nombrte de jugador")
-  contraseña= ("escriba una contraseña")
+print ("llego la hora de iniciar sesión")
 
-else
-respuesta= ("Si")
-jugador= input ("ingrese nombre de jugador")
+IGN= input ("escriba su IGN")
 
-  while  jugador!= jugador :
-  print ("jugador no encontrado")
-  jugador= input ("ingrese nombre de jugador")
+while IGN!= jugador :
+    print ("jugador no encontrado")
+    IGN= input ("ingrese su IGN")
 
-contraseña= input ("ingrese la contraseña")
+print ("¡Bienvenido ", jugador ," !")
+password= input("ingrse la contraseña")
 
-  while  contraseña!= contraseña :
-  print ("contraseña incorrecta")
-  contraseña= input ("ingrese la contraseña")
+while password != contrasena:
+    print ("contraseña incorrecta")
+    print ("¿seguro que eres ", jugador, " ?")
+    password= input ("ingrese la contraseña")
 
-kills= float(input("ingresa numero de eliminaciones"))
-wins= float(input ("Ingresa numero de victorias"))
+print ("¡Bienvenido!")
 
-score= kills + wins
-score= score
+kills= float(input("ingresa el numero de kills"))
+wins= float(input("ingresa tus victorias magistrales"))
 
-   if  score < 8000 :
-   print ("lo sentimos ", jugador , " no cuentas con los puntos suficientes para rankearte")
-    print ("tus puntos: ", score , " puntos para rankerate: 8000")
+score= kills+wins
 
-    else 
-   print ("felicidades has logrado clasificarte en el ranking con ", score , "puntos")
+if score>8000 :
+    print("feliciades ", jugador, " has logrado casificarte en el ranking con ", score, " puntos")
+else :
+    print ("lo sentimos ", jugador, "tienes ", score, " puntos y no son suficientes para entrar en el ranking")
   
   stats= {wins, kills}
   
