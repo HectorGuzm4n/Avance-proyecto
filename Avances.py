@@ -1,9 +1,10 @@
 """
 
-Posicionamiento de jugadores competitivos
-Inicio
-puntaje= []
-puntaje.sort ()
+Posicionamiento de jugadores 
+Crear cuenta 
+Ingresa nombre de jugador
+Ingresa contraseña
+"Hora de iniciar sesión"
 Ingresar nombre de jugafor y contraseña
 mientras constraseña != contraseña
 entonces
@@ -65,7 +66,7 @@ else :
 ranking= [[nombre , score], [stats] ]          //los valores de la lista variaran dependiendo del juego y los puntos de cada jugador con una cuenta vinculada//
 ranking.sort ()
 ranking.insert (5,score)
-ranking.sort ()
+ranking.sort (decrease)
   
   print ("nombre   puntuación   Victorias   Eliminaciones")
   print (ranking [1])
