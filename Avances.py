@@ -61,112 +61,108 @@ if score>8000 :
 else :
     print ("lo sentimos ", jugador, "tienes ", score, " puntos y no son suficientes para entrar en el ranking")
   
-  stats= {wins, kills}
-  
-ranking= [[jugador, score], [stats] ]          //los valores de la lista variaran dependiendo del juego y los puntos de cada jugador con una cuenta vinculada//
-ranking.sort ()
-ranking.insert (5,score)
-ranking.sort (decrease)
-  
-  print ("nombre   puntuación   Victorias   Eliminaciones")
-  print (ranking [1])
-  print (ranking [2])
-  print (ranking [3])
-  print (ranking [4])
-  print (ranking [5])
-  print (ranking [6])
-  print (ranking [7])
-  print (ranking [8])
-  print (ranking [9])
-  print (ranking [10])
-  print (ranking [11])
-  print (ranking [12])
-  print (ranking [13])
-  print (ranking [14])
-  print (ranking [15])
-  print (ranking [16])
-  print (ranking [17])
-  print (ranking [18])
-  print (ranking [19])
-  print (ranking [20])
-  print (ranking [21])
-  print (ranking [22])
-  print (ranking [23])
-  print (ranking [24])
-  print (ranking [25])
-  print (ranking [26])
-  print (ranking [27])
-  print (ranking [28])
-  print (ranking [29])
-  print (ranking [30])
-  print (ranking [31])
-  print (ranking [32])
-  print (ranking [33])
-  print (ranking [34])
-  print (ranking [35])
-  print (ranking [36])
-  print (ranking [37])
-  print (ranking [38])
-  print (ranking [39])
-  print (ranking [40])
-  print (ranking [41])
-  print (ranking [42])
-  print (ranking [43])
-  print (ranking [44])
-  print (ranking [45])
-  print (ranking [46])
-  print (ranking [47])
-  print (ranking [48])
-  print (ranking [49])
-  print (ranking [50])
-  print (ranking [51])
-  print (ranking [52])
-  print (ranking [53])
-  print (ranking [54])
-  print (ranking [55])
-  print (ranking [56])
-  print (ranking [57])
-  print (ranking [58])
-  print (ranking [59])
-  print (ranking [60])
-  print (ranking [61])
-  print (ranking [62])
-  print (ranking [63])
-  print (ranking [64])
-  print (ranking [65])
-  print (ranking [66])
-  print (ranking [67])
-  print (ranking [68])
-  print (ranking [69])
-  print (ranking [70])
-  print (ranking [71])
-  print (ranking [72])
-  print (ranking [73])
-  print (ranking [74])
-  print (ranking [75])
-  print (ranking [76])
-  print (ranking [77])
-  print (ranking [78])
-  print (ranking [79])
-  print (ranking [80])
-  print (ranking [81])
-  print (ranking [82])
-  print (ranking [83])
-  print (ranking [84])
-  print (ranking [85])
-  print (ranking [86])
-  print (ranking [87])
-  print (ranking [88])
-  print (ranking [89])
-  print (ranking [90])
-  print (ranking [91])
-  print (ranking [92])
-  print (ranking [93])
-  print (ranking [94])
-  print (ranking [95])
-  print (ranking [96])
-  print (ranking [97])
-  print (ranking [98])
-  print (ranking [99])
-  print (ranking [100])
+  lista = {'romax': 34553,
+'Rotrex': 42484,
+'Marmota_Espacial': 24285,
+'CtC c3jo': 89700,
+'ViccenialWharf9': 589208,
+'Pablito on 60hz': 540278,
+'CrazyHand4': 506890,
+'G2EcatepecTelmex': 10852,
+'Octavio_Luna333': 25084,
+'rockielchido666':54085,
+'AverageEar554789':54508,
+'HitherMcfly':45050,
+'Jespartan117':54088,
+'XxFred45xX': 59809,
+'Bugha': 520860,
+'Carlosgamer': 20898,
+'Raptor yt': 52580,
+'NRG Clix': 51808,
+'FaZe Martoz': 481080,
+'Mongraal': 78096,
+'NRG Pablo Escobar': 52109,
+'Dripzz': 249509,
+'Mistik_Codee': 65078,
+'AlanCQ': 750874,
+'CrizzXR52': 5870605,
+'JorgeIsaac115': 41801,
+'FaZe Cerdillo': 565078,
+'MinLeyva': 10780,
+'HunterSalomon': 10080,
+'Forastero YT': 51080,
+'BossKyu':50290,
+'DigitalReaper08':10545,
+'Ricardo Navaja': 9485,
+'Faze ShodOcean': 70587,
+'AghastGalaxy477': 408745,
+'AllergicToast95': 45054,
+'BragBird8336805': 54054,
+'CaptainOliva': 8505,
+'CRSllorchX': 51500,
+'BlazingWinter': 50450,
+'VGR Cizzorz': 48408,
+'Dair Extreme96': 41057,
+'Daninja243': 42080,
+'DDP117': 50200,
+'Delogram': 40850,
+'DigitalReaper08': 41080,
+'DrabSky80692391': 10400,
+'Duckling378': 100274,
+'FixableRook3877': 508450,
+'Genial X': 41028,
+'HerbalLemur5136': 24508,
+'Jommae': 65087,
+'juandavo04': 50800,
+'Komplex08Xx': 50700,
+'LiliBA28': 45085,
+'MaxScreamer21': 8017,
+'mugr0son': 540181,
+'Nach72': 50710,
+'nutria': 74058,
+'PriorPenguin': 10800,
+'RainbowGull6471': 54070,
+'SaffronMocha814': 42078,
+'StatelyPlanet96': 74057,
+'StronCookie307': 54058,
+'Tac0sDeJamAicA': 41178,
+'Tailon Dragon': 21004,
+'TFG P4nthom': 48780,
+'VALMAX': 50500,
+'VGR Alexis': 50870,
+'VGR Monster': 417040,
+'VGR Taco': 65805,
+'VGRflame88': 87205,
+'WeeklongEel1': 50878,
+'Wtz manu': 50710,
+'YMAH DassCat': 108820,
+'zKyre': 40578,
+'ZtMowgli60': 55100,
+'Zeathos': 810048,
+'Rash vBi': 50642,
+'Gooner022': 8408,
+'Azgan': 28780,
+'dark drag601': 50604,
+'Titantium': 50518,
+'FuzzWavve': 40570,
+'SIRKOBE24': 52306,
+'fl8365': 80500,
+'XwlluisX': 40870,
+'xXNoble6Xx96': 540570,
+'DANI1298': 80550,
+'LegoKyle': 457087,
+'OskaarPeem': 50507,
+'CidoTheCreatlor': 28507,
+'Ratedshotgun19': 5840780,
+'jose117esnaiper': 8705,
+'Dr Marvel': 78050,
+'Dr. Nopal': 40878,
+'CRSlWilow': 75000,
+'JxRiTTeRx360': 75080,
+'paco zubaran': 40200,
+'NICKK107': 82050,}
 
+import operator
+clients_sort = sorted(lista.items(), key=operator.itemgetter(1), reverse=True)
+for name in enumerate(clients_sort):
+    print(name[1][0], ':', lista[name[1][0]])
