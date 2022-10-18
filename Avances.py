@@ -28,6 +28,16 @@ print (puntaje [5])
 fin
 """
 
+def bienvenida():
+    print ("Bienvenido al sistema de ranking de videojuegos")
+
+def conclusiones ():
+    if score>8000 :
+        print("feliciades ", jugador, " has logrado casificarte en el ranking con ", score, " puntos")
+    else :
+        print ("lo sentimos ", jugador, "tienes ", score, " puntos y no son suficientes para entrar en el ranking")
+
+bienvenida()
 
 print ("cree una cuenta")
 jugador= input ("ingrese su nombre de jugador")
@@ -51,17 +61,14 @@ while password != contrasena:
 
 print ("¡Bienvenido!")
 
+
 kills= float(input("ingresa el numero de kills"))
 wins= float(input("ingresa tus victorias magistrales"))
-
 score= kills+wins
 
-if score>8000 :
-    print("feliciades ", jugador, " has logrado casificarte en el ranking con ", score, " puntos")
-else :
-    print ("lo sentimos ", jugador, "tienes ", score, " puntos y no son suficientes para entrar en el ranking")
-  
-  lista = {'romax': 34553,
+
+
+lista = {'romax': 34553,
 'Rotrex': 42484,
 'Marmota_Espacial': 24285,
 'CtC c3jo': 89700,
@@ -160,9 +167,16 @@ else :
 'CRSlWilow': 75000,
 'JxRiTTeRx360': 75080,
 'paco zubaran': 40200,
-'NICKK107': 82050,}
+'NICKK107': 82050,
+jugador: score}
+
+if score < 8000:
+    del lista[jugador]
+    lista
 
 import operator
 clients_sort = sorted(lista.items(), key=operator.itemgetter(1), reverse=True)
 for name in enumerate(clients_sort):
     print(name[1][0], ':', lista[name[1][0]])
+
+conclusiones ()
