@@ -1,32 +1,61 @@
-"""
 
-Posicionamiento de jugadores 
-Crear cuenta 
-Ingresa nombre de jugador
-Ingresa contraseña
-"Hora de iniciar sesión"
-Ingresar nombre de jugafor y contraseña
-mientras constraseña != contraseña
-entonces
-Imprimir ("su contraseña es incorrecta")
-definir "score" como entero
-Leer kills
-leer wins
-score= kills+wins
-Imprimir score
-si score < 8000 entonces
-imprimir ("tus puntos no son suficientes para rankearte")
-SiNO
-imprimir ("felicidades has logrado clasificarte en el ranking con ", score)
-puntaje.insert (5,score)
-puntaje.sort ()
-print (puntaje [1])
-print (puntaje [2])
-print (puntaje [3])
-print (puntaje [4])
-print (puntaje [5])
-fin
-"""
+
+#Proyecto
+
+#Posicionamiento de jugadores competitivos (shooters)
+
+#A lo largo delos años los gamers han comtetido por ser los mejores del mundo y para eso se han organizado varios torneos de diferentes juegos. Sin embargo la mayoria de las veces solo se sabe quien es el mejor jugdor cuando el torneo ha concluido, pero antes del torneo nadie sabe quien es mejor, por lo que planeo diseñar un programa que clasifique a los jugadores para saber quien es el mejor de todos en ese momento.
+
+#El programa tomara los datos de eliminaciones y victorias del jugador para luego sumarlos y asi tener un resultado que mostrara una cierta cantidad de puntos (un numero) y el programa los clasificara de mayor a menor.
+
+#Inicio
+
+#dar la bienvenida
+
+#crear cuenta
+
+#iniciar sesión
+
+#ingresar el numero de eliminaciones y vicotrias
+
+#imprimir lista
+
+#score= eliminaciones+victorias
+
+#si score> 8000
+
+#agregar jugador en la lista
+
+#sino puntos insuficientes
+
+#te faltan "puntos" para clasificarte
+
+#fin
+
+#Los avances estan en la carpeta de avances.py, las otras carpetas contienen los avances anteriores pero contienen errores. Avance 2
+
+#En este avance se incorporaron sumas y restas para saber cuantos puntos tiene el jugador y para saber si le faltaban puntos para clasificarse
+
+#Avance 3
+
+#En este avance se incorporaron funciones para dar la bienvenida y para dar las conclusiones para cuando el jugador sepa si esta dentro del ranking o no
+
+#Avance 4
+
+#Se añadieron condicionales para cuando se cumplieran los puntos minimos y tambien para saber si el programa tiene que restar la cantidad de puntos por 8000#
+
+#Avance 5
+
+#Se añadieron ciclos while para que el usuario ingrese una cuenta y contraseña y en caso de que estos sean incorrectos se correra el ciclo haste que la condición sea correcta.
+
+#Avance 6
+
+#Se añadieron listas para que guarden los puntos de los jugadores
+
+#Avance 7
+
+#Se añadió un diccionario para que guradara los puntos de los jugadores y esta se imprime de mayor a menor en relación a los puntos.
+
 
 def bienvenida():
     print ("Bienvenido al sistema de ranking de videojuegos")
@@ -36,19 +65,22 @@ def conclusiones ():
         print("feliciades ", jugador, " has logrado casificarte en el ranking con ", score, " puntos")
     else :
         print ("lo sentimos ", jugador, "tienes ", score, " puntos y no son suficientes para entrar en el ranking")
+        print("lo minimo para clasificarte es de 8000 puntos")
+        print("Te faltan ", res, " puntos para entrar al ranking")
 
 bienvenida()
-
+                                                              #Creación de cuenta
 print ("cree una cuenta")
 jugador= input ("ingrese su nombre de jugador")
 contrasena= input ("ingrese una contraseña")
 
+print("Tu cuenta a sido creada")
 print ("llego la hora de iniciar sesión")
-
+                                                     #Inicio de sesión
 IGN= input ("escriba su IGN")
 
 while IGN!= jugador :
-    print ("jugador no encontrado")
+    print ("nombre de jugador incorrecto")
     IGN= input ("ingrese su IGN")
 
 print ("¡Bienvenido ", jugador ," !")
@@ -59,15 +91,15 @@ while password != contrasena:
     print ("¿seguro que eres ", jugador, " ?")
     password= input ("ingrese la contraseña")
 
-print ("¡Bienvenido!")
-
-
+print ("¡Bienvenido!", jugador)
+print("Necesitamos algunos datos para saber si entras en el ranking")
+                                                                            #Calculo de puntos
 kills= float(input("ingresa el numero de kills"))
 wins= float(input("ingresa tus victorias magistrales"))
 score= kills+wins
 
-
-
+                     
+                                     #lista de jugadores
 lista = {'romax': 34553,
 'Rotrex': 42484,
 'Marmota_Espacial': 24285,
@@ -169,11 +201,12 @@ lista = {'romax': 34553,
 'paco zubaran': 40200,
 'NICKK107': 82050,
 jugador: score}
-
+                             #si el puntaje no cumple con el minimo entonces se cacularan los puntos faltantes
 if score < 8000:
     del lista[jugador]
     lista
-
+    res= 8000-score
+                                                                                  #imprime la lista de mayor a menor en relación a los puntos
 import operator
 clients_sort = sorted(lista.items(), key=operator.itemgetter(1), reverse=True)
 for name in enumerate(clients_sort):
