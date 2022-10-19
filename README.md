@@ -10,31 +10,43 @@ El programa tomara los datos de eliminaciones y victorias del jugador para luego
 
 Inicio
 
-definir "score" como entero
+dar la bienvenida
 
-Leer kills
+crear cuenta
 
-leer wins
+iniciar sesión
 
-score= kills+wins
+ingresar el numero de eliminaciones y vicotrias
 
-Imprimir score
+imprimir lista
 
-ordenar de > a <
+score= eliminaciones+victorias
 
-Avance 2 (el codigo esta en la carpeta de arriba "avance 2"
+si score> 8000
 
-En este avance incorporé operaciones de suma ingresando valores para poder hacer el ejemplo
+agregar jugador en la lista
 
-Avance 3 (el avance esta en la carpeta avance 3.py)
+sino
+puntos insuficientes
 
-En este avance se incorporaron funciones de sumas y para ordenar un grupo de valores en orden decresciente
+te faltan "puntos" para clasificarte
+
+fin
+
+Los avances estan en la carpeta de avances.py, las otras carpetas contienen los avances anteriores pero contienen errores.
+Avance 2 
+
+En este avance se incorporaron sumas y restas para saber cuantos puntos tiene el jugador y para saber si le faltaban puntos para clasificarse
+
+Avance 3 
+
+En este avance se incorporaron funciones para dar la bienvenida y para dar las conclusiones para cuando el jugador sepa si esta dentro del ranking o no 
 
 Avance 4
 
-Se añadió una condicional en la que se tiene que cumplir con sierto numero de puntos para poder aparecer en el ranking, si este numero no es alcanzado entonces el programa mandar un mensaje de que los puntos son insuficientes.
+Se añadieron condicionales para cuando se cumplieran los puntos minimos y tambien para saber si el programa tiene que restar la cantidad de puntos por 8000
 
-Avance 5 (el avance esta en la carpeta de avances, ahi se pondran todos los avances)
+Avance 5
 
 Se añadieron ciclos while para que el usuario ingrese una cuenta y contraseña y en caso de que estos sean incorrectos se correra el ciclo haste que la condición sea correcta.
 
@@ -42,6 +54,6 @@ Avance 6
 
 Se añadieron listas para que guarden los puntos de los jugadores
 
-Avance 7 (avances en loa carpeta de avances)
+Avance 7 
 
-Se añadieron listas anidadas para que guarden el nombre, puntaje, y el desglose de victorias y eliminaciones
+Se añadió un diccionario para que guradara los puntos de los jugadores y esta se imprime de mayor a menor en relación a los puntos.
