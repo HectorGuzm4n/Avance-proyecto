@@ -34,6 +34,7 @@ te faltan "puntos" para clasificarte
 fin
 
 Los avances estan en la carpeta de avances.py, las otras carpetas contienen los avances anteriores pero contienen errores.
+
 Avance 2 
 
 En este avance se incorporaron sumas y restas para saber cuantos puntos tiene el jugador y para saber si le faltaban puntos para clasificarse
