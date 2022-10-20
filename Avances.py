@@ -94,9 +94,13 @@ while password != contrasena:
 print ("¡Bienvenido!", jugador)
 print("Necesitamos algunos datos para saber si entras en el ranking")
                                                                             #Calculo de puntos
-kills= float(input("ingresa el numero de kills"))
-wins= float(input("ingresa tus victorias magistrales"))
-score= kills+wins
+def puntos():
+    kills= float(input("ingresa el numero de kills"))
+    wins= float(input("ingresa tus victorias magistrales"))
+    global score
+    score= kills+wins
+
+puntos()
 
                      
                                      #lista de jugadores
